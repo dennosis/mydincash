@@ -1,0 +1,45 @@
+.l-main-grid
+    display: grid
+    grid-gap: 0px
+    grid-template-columns: 150px auto 150px
+    grid-template-rows: 150px auto
+    grid-template-areas: "header content logo" "menu content footer"
+    box-sizing: border-box;
+    width: 900px
+    height: 500px 
+    grid-gap: 10px
+
+@media screen and (max-width: 940px) and (orientation: landscape)
+    .l-main-grid
+        width: 100%
+        height: 100%
+
+@media (max-width: 940px)
+    .l-main-grid
+        width: 100%
+        height: 100%
+        grid-template-rows: 150px 150px auto;
+        grid-template-areas: "header header logo" "menu menu footer" "content content footer"
+
+@media (max-width: 480px)
+    .l-main-grid
+        width: 100%
+        height: 100%
+        grid-template-rows: 75px 75px auto;
+        grid-template-columns: 75px auto 75px;
+        grid-template-areas: "header header logo" "menu menu menu" "content content content"
+
+@media (max-width: 840px) and (orientation: landscape) and (max-height: 480px)
+    .l-main-grid
+        width: 100%
+        height: 100%
+        grid-template-rows: 75px auto;
+        grid-template-columns: 75px auto 75px;
+        grid-template-areas: "header header logo" "menu content content"
+
+
+
+
+
+
+
