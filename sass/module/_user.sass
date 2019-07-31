@@ -1,20 +1,27 @@
 .user
     &-img
-        max-height: 50px
-        max-width: 50px
         min-height: 30px
         min-width: 30px
+        max-height: 50px
+        max-width: 50px
         border-radius: $large $small $large $small
         border: 2px solid $grey-blue-20
+        box-sizing: border-box
         
     &-cash
         @extend %font-bold, %font-large, %text-upercase
-        padding: $medium
+        padding: 0 $medium 0 $medium
+        white-space: nowrap
         &-up
             color: $red-20
+            &-prev
+                color: $red-10
         &-down
             color: $green-20
+            &-prev
+                color: $green-10
+
     &-name
         @extend %font-bold, %font-large, %text-upercase
         color: $grey-blue-20
-        padding: $medium
+        padding: 0 $medium 0 $medium

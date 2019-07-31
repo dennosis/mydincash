@@ -4,105 +4,29 @@
         <link rel="stylesheet" type="text/css" href="sass/styles.css">
     </head>
 
-    <!-- <style>
-        body{
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        }
-
-        .main{
-            display:grid;
-            width:100%;
-            height:100%;
-            grid-template-columns: auto;
-            grid-template-rows: min-content auto;
-            grid-template-areas: "header" "body";
-        }
-
-        .header{
-            grid-area: header;
-            background-color: brown;
-            padding: 10px;
-            display: grid;
-            grid-template-rows: min-content;
-            grid-template-columns: auto min-content;
-            grid-gap: 10px;
-            overflow: hidden;
-        }
-
-        .body{
-            grid-area: body;
-            background-color: cadetblue;
-        }
-
-        .menu{
-            background: aqua;
-        }
-
-        .menu-item{
-            width: 80px;
-            height: 80px;
-            background-color: coral;
-        }
-
-        .container-flow{
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: auto;
-            grid-template-rows: auto;
-            grid-gap: 10px;
-            overflow: auto;
-        }
-        .logo{
-            background-color: blue;
-            width: 80px;
-            height: 80px;
-        }
-
-        @media (orientation: landscape) {
-            .main{
-                grid-template-columns: min-content auto;
-                grid-template-rows: auto;
-                grid-template-areas: "header body";
-            }
-
-            .container-flow{
-                grid-auto-flow: row;
-                grid-auto-rows: auto;
-                grid-template-columns: auto;
-                overflow: auto;
-            }
-            .header{
-                grid-template-rows: auto min-content;
-                grid-template-columns: min-content;
-            }
-
-        }
-
-        .container-flow::-webkit-scrollbar {display:none;} 
-        .container-flow::-moz-scrollbars-none {display:none;}
-        .container-flow::-o-scrollbar {display:none;} 
-        .container-flow::-google-ms-scrollbar {display:none;}
-        .container-flow::-khtml-scrollbar {display:none;} 
-        .container-flow{
-            scrollbar-width: none;
-        }
-
-    </style> -->
-
     <body>
         <div class = "l-main-grid">
             <div class="l-logo">logo</div>
             <div class="l-user flex flex--center--center">
                 <div class="user-img img-container flex flex--center--center">
+                    <img class = "img--max-100" src="https://www.escritas.org/autores/fernando-pessoa.jpg" >    
                 </div>
             </div>
             <header class="l-header flex flex--center--left">
-                <span class="user-name">Dennis Aguiar</span>
-                <span class="user-cash user-cash-down">R$ 12.300,50</span>
-                <span class="user-cash user-cash-up">R$ 12,458,78</span>
+                <div class="flex flex--wrap flex__item--shrink--grow">
+                    <span class="user-cash user-cash-up">R$ 12.300,50</span>
+
+                    <span class="user-name">Dennis</span>
+
+                </div>
+                <div class="flex flex--wrap flex__item--shrink--grow">
+                    <span class="user-cash user-cash-up">R$ 12.300,50</span>
+                    <span class="user-cash user-cash-up-prev">R$ 12,458,78</span>
+                </div>
+                <div class="flex flex--wrap flex__item--shrink--grow">
+                        <span class="user-cash user-cash-down">R$ 12.300,50</span>
+                        <span class="user-cash user-cash-down-prev">R$ 12,458,78</span>
+                </div>
             </header>
         
             <div class="l-menu menu"> 
