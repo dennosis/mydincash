@@ -1,0 +1,61 @@
+.input
+    @extend %font-regular, %font-medium
+    background: transparent
+    border: $xxsmall solid $grey-blue-30
+    border-radius: $small
+    padding: $medium
+    color: $grey-blue-10
+    box-sizing: border-box
+
+.select
+    @extend %font-regular, %font-medium
+    background: transparent
+    border: $xxsmall solid $grey-blue-30
+    border-radius: $small
+    padding: $medium
+    color: $grey-blue-10
+    box-sizing: border-box
+    &__option
+        background:  $grey-blue-40
+        color: $grey-blue-10
+
+.radio
+    height: 15px
+    width: 15px
+    border: $xxsmall solid $grey-blue-30
+    background: transparent
+    border-radius: $small
+    &.is-active
+        background: $grey-blue-20
+
+.toggle
+    height: 15px
+    width: 40px
+    border: $xxsmall solid $grey-blue-30
+    background: transparent
+    border-radius: $small
+    display: flex
+    padding: $xxsmall
+    justify-content: flex-start
+    &__button
+        @extend %font-bold, %font-small, %text-upercase
+        width: 60%
+        background-color: $grey-blue-30
+        border-radius: $xsmall
+        color: $grey-blue-20
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &.is-active
+        background: $grey-blue-20
+        justify-content: flex-end
+
+    
+.button
+    @extend %font-regular, %font-medium
+    background: $grey-blue-30 
+    border-radius: $small
+    padding: $medium
+    color: $grey-blue-20
+    border: none
