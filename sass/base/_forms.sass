@@ -6,6 +6,10 @@
     padding: $medium
     color: $grey-blue-10
     box-sizing: border-box
+    box-shadow: inset 5px 5px 20px #0000004a;
+    &.is-error
+        color: $red-10
+        border-color: $red-10
 
 .select
     @extend %font-regular, %font-medium
@@ -15,9 +19,16 @@
     padding: $medium
     color: $grey-blue-10
     box-sizing: border-box
+    box-shadow: inset 5px 5px 20px #0000004a;
+
     &__option
         background:  $grey-blue-40
         color: $grey-blue-10
+
+    &.is-error
+        color: $red-10
+        border-color: $red-10
+        box-shadow: inset 0px 0px 10px #d7695f30
 
 .radio
     height: 15px
@@ -25,8 +36,13 @@
     border: $xxsmall solid $grey-blue-30
     background: transparent
     border-radius: $small
+    box-shadow: inset 5px 5px 20px #0000004a;
     &.is-active
         background: $grey-blue-20
+        box-shadow: none;
+    &.is-error
+        color: $red-10
+        border-color: $red-10
 
 .toggle
     height: 15px
@@ -51,6 +67,10 @@
         background: $grey-blue-20
         justify-content: flex-end
 
+    &.is-error
+        color: $red-10
+        border-color: $red-10
+
     
 .button
     @extend %font-regular, %font-medium
@@ -59,3 +79,8 @@
     padding: $medium
     color: $grey-blue-20
     border: none
+    box-shadow: 5px 5px 20px #0000004a;
+    &.is-error
+        color: $red-10
+        border-color: $red-10
+        // box-shadow: inset 0px 0px 10px #d7695f30

@@ -53,9 +53,17 @@
                         <div class="register flex flex-item--shrink"></div>
                     </div>
                 </section> -->
-                <form class="flex flex--column flex--center--between" style="height: 300px">
+                <form class="flex flex--wrap flex--center--between" style="height: 100%; margin-top: 30px">
                     <input class="input" type="text">
+                    <input class="input is-error" type="text">
                     <select class="select"   name="" id="">
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                    </select>
+                    <select class="select is-error"    name="" id="">
                         <option class="select__option" value="">teste</option>
                         <option class="select__option" value="">teste</option>
                         <option class="select__option" value="">teste</option>
@@ -64,10 +72,13 @@
                     </select>
                     <div class="radio"></div>
                     <div class="radio is-active"></div>
+                    <div class="radio is-error"></div>
                     <div class="toggle"><span class="toggle__button">off</span></div>
                     <div class="toggle is-active"><span class="toggle__button is-active">on</span></div>
+                    <div class="toggle is-error"><span class="toggle__button">off</span></div>
 
                     <button class="button">button</button>
+                    <button class="button is-error">button</button>
                 </form>
             </div>
             
@@ -75,5 +86,4 @@
 
         </div>
     </body>
-
 </html>
