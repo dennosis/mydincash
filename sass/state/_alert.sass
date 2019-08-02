@@ -1,0 +1,17 @@
+.alert
+    @extend %font-regular, %font-large
+    box-sizing: border-box
+    padding: $large
+    border-radius: $large $large 0 0
+    &.is-error
+        background-color: $red-30
+        border: 2px solid $red-10 
+        color: $red-10 
+    &.is-verified
+        background-color: $green-30
+        border: 2px solid $green-20 
+        color: $green-10 
+    &.is-info
+        background-color: $blue-30
+        border: 2px solid $blue-20 
+        color: $blue-10 

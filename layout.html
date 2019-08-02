@@ -41,6 +41,10 @@
             </div>
             
             <div class="l-content"> 
+                <div class="alert is-error flex flex--center--center" style="width: 100%">Alert</div>
+                <div class="alert is-verified flex flex--center--center" style="width: 100%">Alert</div>
+                <div class="alert is-info flex flex--center--center" style="width: 100%">Alert</div>
+
                 <!-- <section class="app flex flex--column">
                     <span class="app-title"> Titulo Aplicação</span>
                     <div class="app-body flex flex--column flex--wrap"> 
@@ -53,9 +57,29 @@
                         <div class="register flex flex-item--shrink"></div>
                     </div>
                 </section> -->
-                <form class="flex flex--wrap flex--center--between" style="height: 100%; margin-top: 30px">
+                <form class="flex flex--wrap flex--center--between" style="height: 250px; padding: 30px; box-sizing: border-box">
+                    
+                    
+                    <div class="radio"></div>
+                    <div class="radio is-active"></div>
+                    <div class="radio is-error"></div>
+                    <div class="radio is-verified"></div>
+                    <div class="radio is-active is-error"></div>
+                    <div class="radio is-active is-verified"></div>
+                    <div class="toggle"><span class="toggle__button">off</span></div>
+                    <div class="toggle is-active"><span class="toggle__button is-active">on</span></div>
+                    <div class="toggle is-error"><span class="toggle__button is-error">off</span></div>
+                    <div class="toggle is-verified"><span class="toggle__button is-verified">off</span></div>
+                    <div class="toggle is-active is-error"><span class="toggle__button is-error">off</span></div>
+                    <div class="toggle is-active is-verified"><span class="toggle__button is-verified">off</span></div>
+
+                    <span class="button">button</span>
+                    <span class="button is-error">button</span>
+                    <span class="button is-verified">button</span>
+
                     <input class="input" type="text">
                     <input class="input is-error" type="text">
+                    <input class="input is-verified" type="text">
                     <select class="select"   name="" id="">
                         <option class="select__option" value="">teste</option>
                         <option class="select__option" value="">teste</option>
@@ -70,15 +94,14 @@
                         <option class="select__option" value="">teste</option>
                         <option class="select__option" value="">teste</option>
                     </select>
-                    <div class="radio"></div>
-                    <div class="radio is-active"></div>
-                    <div class="radio is-error"></div>
-                    <div class="toggle"><span class="toggle__button">off</span></div>
-                    <div class="toggle is-active"><span class="toggle__button is-active">on</span></div>
-                    <div class="toggle is-error"><span class="toggle__button">off</span></div>
-
-                    <button class="button">button</button>
-                    <button class="button is-error">button</button>
+                    <select class="select is-verified"    name="" id="">
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                        <option class="select__option" value="">teste</option>
+                    </select>
+  
                 </form>
             </div>
             
