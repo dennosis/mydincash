@@ -1,5 +1,4 @@
 // box-shadow: inset 0px 0px 10px #d7695f30
-
 .input
     @extend %font-regular, %font-medium
     background: transparent
@@ -8,15 +7,6 @@
     padding: $medium
     color: $grey-blue-10
     box-sizing: border-box
-    box-shadow: inset 5px 5px 20px #0000004a;
-    &.is-error
-        color: $red-20
-        border-color: $red-10
-    &.is-verified
-        color: $green-20
-        border-color: $green-20
-    &:hover
-        border-color: $grey-blue-20
 
 .select
     @extend %font-regular, %font-medium
@@ -26,40 +16,22 @@
     padding: $medium
     color: $grey-blue-10
     box-sizing: border-box
-    box-shadow: inset 5px 5px 20px #0000004a;
     cursor: pointer
     &__option
         background:  $grey-blue-40
         color: $grey-blue-10
         border: none
-    &.is-error
-        color: $red-20
-        border-color: $red-10
-    &.is-verified
-        color: $green-20
-        border-color: $green-20
-    &:hover
-        border-color: $grey-blue-20
 
 .radio
-    height: 15px
-    width: 15px
+    height: 20px
+    width: 20px
     border: $xxsmall solid $grey-blue-30
     background: transparent
     border-radius: $small
-    box-shadow: inset 2px 2px 5px #0000004a
     cursor: pointer
-    &.is-active
-        background: $grey-blue-20
-    &.is-error
-        border-color: $red-10
-    &.is-verified
-        border-color: $green-20
-    &:hover
-        border-color: $grey-blue-20
 
 .toggle
-    height: 15px
+    height: 20px
     width: 40px
     border: $xxsmall solid $grey-blue-30
     background: transparent
@@ -68,7 +40,6 @@
     padding: $xxsmall
     justify-content: flex-start
     cursor: pointer
-    box-shadow: inset 2px 2px 5px #0000004a
     &__button
         @extend %font-bold, %font-small, %text-upercase
         width: 60%
@@ -78,36 +49,24 @@
         display: flex
         justify-content: center
         align-items: center
-        &.is-error
-            color: $red-20
-        &.is-verified
-            color: $green-20
-    &.is-active
-        background: $grey-blue-20
-        justify-content: flex-end
-    &.is-error
-        border-color: $red-10
-    &.is-verified
-        border-color: $green-20
-    &:hover
-        border-color: $grey-blue-20
-        
+
 .button
     @extend %font-regular, %font-medium
     background: $grey-blue-30 
     border-radius: $small
-    padding: $medium
-    color: $grey-blue-20
+    padding: $large
+    color: $grey-blue-10
     border: none
-    box-shadow: 5px 5px 20px #0000004a;
     cursor: pointer
-    &.is-error
-        color: $red-20
-        background: $red-30
-    &.is-verified
-        color: $green-20
-        background: $green-30
-    &:hover
-        background: $grey-blue-20
-    &:active
-        background: $grey-blue-50
+
+.label
+    @extend %font-light
+    color: $grey-blue-20
+    &--xlarge
+        @extend %font-xlarge
+    &--large
+        @extend %font-large
+    &--medium
+        @extend %font-medium
+    &--small
+        @extend %font-small

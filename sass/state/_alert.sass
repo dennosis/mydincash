@@ -1,16 +1,16 @@
 .alert
-    @extend %font-regular, %font-large
-    box-sizing: border-box
-    padding: $large
-    border-radius: $large $large 0 0
-    &.is-error
+    &.is-danger
         background-color: $red-30
-        border: 2px solid $red-10 
-        color: $red-10 
-    &.is-verified
+        border: 2px solid $red-20 
+        color: $red-20 
+    &.is-success
         background-color: $green-30
         border: 2px solid $green-20 
         color: $green-10 
+    &.is-warning
+        background-color: $yellow-30
+        border: 2px solid $yellow-20 
+        color: $yellow-10 
     &.is-info
         background-color: $blue-30
         border: 2px solid $blue-20 

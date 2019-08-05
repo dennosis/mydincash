@@ -6,103 +6,178 @@
 
     <body>
         <div class = "l-main-grid">
-            <div class="l-logo">logo</div>
-            <div class="l-user flex flex--center--center">
-                <div class="user-img img-container flex flex--center--center">
-                    <img class = "img--100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSLrwf0Y0_Km55LbgLt3f_17ftV95WcXmrvnSNGL1cot1jNgHD" >    
+            <!-- <div class="l-logo">logo</div> -->
+            <div class="l-user flex flex-align-items--center flex-justify-content--center">
+                <div class="user-img overflow--auto flex flex-align-items--center flex-justify-content--center">
+                    <img class="height--100 width--100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSLrwf0Y0_Km55LbgLt3f_17ftV95WcXmrvnSNGL1cot1jNgHD" >    
                 </div>
             </div>
-            <header class="l-header flex flex--center--left">
-                <div class="flex flex--wrap flex__item--shrink--grow">
+            <header class="l-header flex flex-align-items--stretch flex-justify-content--center">
+                <div class="logo shadow--small flex flex-align-items--center flex-justify-content--center">logo</div>
+
+                <div class="flex flex--wrap flex__item--shrink--grow flex-align-items--center flex-justify-content--center">
                     <span class="user-cash user-cash-up">R$ 12.300,50</span>
-
                     <span class="user-name">Dennis</span>
-
-                
                 </div>
-                <div class="flex flex--wrap flex__item--shrink--grow">
+                <div class="flex flex--wrap flex__item--shrink--grow flex-align-items--center flex-justify-content--center">
                     <span class="user-cash user-cash-up">R$ 12.300,50</span>
                     <span class="user-cash user-cash-up-prev">R$ 12,458,78</span>
                 </div>
-                <div class="flex flex--wrap flex__item--shrink--grow">
-                        <span class="user-cash user-cash-down">R$ 12.300,50</span>
-                        <span class="user-cash user-cash-down-prev">R$ 12,458,78</span>
+                <div class="flex flex--wrap flex__item--shrink--grow flex-align-items--center flex-justify-content--center">
+                    <span class="user-cash user-cash-down">R$ 12.300,50</span>
+                    <span class="user-cash user-cash-down-prev">R$ 12,458,78</span>
                 </div>
             </header>
         
-            <div class="l-menu menu"> 
-                <div class="menu-item menu-item-is-active"></div>
-                <div class="menu-item"></div>
-                <div class="menu-item"></div>
-                <div class="menu-item"></div>
-                <div class="menu-item"></div>
-                <div class="menu-item"></div>
-
+            <div class="l-menu menu flex flex-align-items--center flex-justify-content--center flex-align-content--center flex--wrap padding--small"> 
+                <div class="menu__item margin--small is-active"></div>
+                <div class="menu__item margin--small"></div>
+                <div class="menu__item margin--small"></div>
+                <div class="menu__item margin--small"></div>
+                <div class="menu__item margin--small"></div>
+                <div class="menu__item margin--small"></div>
             </div>
             
-            <div class="l-content"> 
-                <div class="alert is-error flex flex--center--center" style="width: 100%">Alert</div>
-                <div class="alert is-verified flex flex--center--center" style="width: 100%">Alert</div>
-                <div class="alert is-info flex flex--center--center" style="width: 100%">Alert</div>
+            <div class="l-content flex flex--column overflow--auto"> 
 
-                <!-- <section class="app flex flex--column">
-                    <span class="app-title"> Titulo Aplicação</span>
-                    <div class="app-body flex flex--column flex--wrap"> 
-                        <div class="register flex flex-item--shrink"></div>
-                        <div class="register flex flex-item--shrink"></div>
-                        <div class="register flex flex-item--shrink"></div>
-                        <div class="register flex flex-item--shrink"></div>
-                        <div class="register flex flex-item--shrink"></div>
-                        <div class="register flex flex-item--shrink"></div>
-                        <div class="register flex flex-item--shrink"></div>
+                <!-- <div class="shadow--inset--medium alert flex flex-align-items--center flex-justify-content--center" style="width: 100%">normal</div> -->
+                
+                <div class="shadow--inset--medium alert is-danger flex flex-align-items--center flex-justify-content--center" style="width: 100%">Erro ao criar Usuario</div>
+                <!--
+                <div class="shadow--inset--medium alert is-success flex flex-align-items--center flex-justify-content--center" style="width: 100%">Usuario criado</div>
+                <div class="shadow--inset--medium alert is-warning flex flex-align-items--center flex-justify-content--center" style="width: 100%">Vericar conta</div>
+                <div class="shadow--inset--medium alert is-info flex flex-align-items--center flex-justify-content--center" style="width: 100%">Ação corresponde(...)</div>
+                 -->
+                <section class="flex flex--column overflow--auto padding--large">
+                    <span class="title title--large padding-bottom--small margin-top--medium margin-bottom--medium"> Titulo Aplicação</span>
+                    <div class="flex flex--column flex--wrap"> 
+                        <div class="register margin--small block shadow--small flex flex__item--shrink"></div>
+                        <div class="register margin--small block shadow--small flex flex__item--shrink"></div>
+                        <div class="register margin--small block shadow--small flex flex__item--shrink"></div>
+                        <div class="register margin--small block shadow--small flex flex__item--shrink"></div>
+                        <div class="register margin--small block shadow--small flex flex__item--shrink"></div>
+                        <div class="register margin--small block shadow--small flex flex__item--shrink"></div>
+                        <div class="register margin--small block shadow--small flex flex__item--shrink"></div>
                     </div>
-                </section> -->
-                <form class="flex flex--wrap flex--center--between" style="height: 250px; padding: 30px; box-sizing: border-box">
-                    
-                    
-                    <div class="radio"></div>
-                    <div class="radio is-active"></div>
-                    <div class="radio is-error"></div>
-                    <div class="radio is-verified"></div>
-                    <div class="radio is-active is-error"></div>
-                    <div class="radio is-active is-verified"></div>
-                    <div class="toggle"><span class="toggle__button">off</span></div>
-                    <div class="toggle is-active"><span class="toggle__button is-active">on</span></div>
-                    <div class="toggle is-error"><span class="toggle__button is-error">off</span></div>
-                    <div class="toggle is-verified"><span class="toggle__button is-verified">off</span></div>
-                    <div class="toggle is-active is-error"><span class="toggle__button is-error">off</span></div>
-                    <div class="toggle is-active is-verified"><span class="toggle__button is-verified">off</span></div>
 
-                    <span class="button">button</span>
-                    <span class="button is-error">button</span>
-                    <span class="button is-verified">button</span>
+                    <div class="carousel flex flex-align-items--stretch flex-justify-content--between">
+                        <div class="carousel__button margin--small block shadow--small border-radius--small"></div>
+                        <div class="carousel__body flex flex-align-items--stretch overflow--hidden flex-justify-content--between">
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                            <div class="carousel__item margin--small block shadow--small flex__item"></div>
+                        </div>
+                        <div class="carousel__button block margin--small shadow--small border-radius--small"></div>
+                    </div>
+                
+                    <form class="margin--small flex flex--column padding--medium flex--wrap flex--stretch--between block shadow--small" style="box-sizing: border-box">
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium">Label</label>
+                            <div class="radio shadow--inset--small"></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium">Label</label>
+                            <div class="radio shadow--inset--small is-active"></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-error">Label</label>
+                            <div class="radio shadow--inset--small is-error"></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-verified">Label</label>
+                            <div class="radio shadow--inset--small is-verified"></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-error">Label</label>
+                            <div class="radio shadow--inset--small is-active is-error"></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-verified">Label</label>
+                            <div class="radio shadow--inset--small is-active is-verified"></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium">Label</label>
+                            <div class="toggle shadow--inset--small"><span class="toggle__button">off</span></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium">Label</label>
+                            <div class="toggle shadow--inset--small is-active"><span class="toggle__button is-active">on</span></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-error">Label</label>
+                            <div class="toggle shadow--inset--small is-error"><span class="toggle__button is-error">off</span></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-verified">Label</label>
+                            <div class="toggle shadow--inset--small is-verified"><span class="toggle__button is-verified">off</span></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-error">Label</label>
+                            <div class="toggle shadow--inset--small is-active is-error"><span class="toggle__button is-error">off</span></div>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-verified">Label</label>
+                            <div class="toggle shadow--inset--small is-active is-verified"><span class="toggle__button is-verified">off</span></div>
+                        </div>
 
-                    <input class="input" type="text">
-                    <input class="input is-error" type="text">
-                    <input class="input is-verified" type="text">
-                    <select class="select"   name="" id="">
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                    </select>
-                    <select class="select is-error"    name="" id="">
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                    </select>
-                    <select class="select is-verified"    name="" id="">
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                        <option class="select__option" value="">teste</option>
-                    </select>
-  
-                </form>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium">Label</label>
+                            <input class="input shadow--inset--small" type="text">
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-error">Label</label>
+                            <input class="input shadow--inset--small is-error" type="text">
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-verified">Label</label>
+                            <input class="input shadow--inset--small is-verified" type="text">
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium">Label</label>
+                            <select class="select shadow--inset--small"   name="" id="">
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                            </select>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-error">Label</label>
+                            <select class="select is-error shadow--inset--small"    name="" id="">
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                            </select>
+                        </div>
+                        <div class="padding--small flex flex--column">
+                            <label class="label label--medium is-verified">Label</label>
+                            <select class="select is-verified shadow--inset--small"    name="" id="">
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                                <option class="select__option" value="">teste</option>
+                            </select>
+                        </div>
+
+                        <div class="padding-top--small padding-bottom--small flex">
+                                <span class="button flex__item--grow margin--small shadow--small">button</span>
+                                <span class="button flex__item--grow margin--small shadow--small is-error">button</span>
+                                <span class="button flex__item--grow margin--small shadow--small is-verified">button</span>
+                        </div>
+                    </form>
+                </section>
             </div>
             
             <div class="l-footer"> footer</div>

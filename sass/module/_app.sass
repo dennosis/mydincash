@@ -1,11 +1,24 @@
-.app
-    padding: $xlarge
-    box-sizing: border-box
-    max-height: 100%
-    overflow: auto
-    &-title
-        @extend %font-bold, %text-upercase
-        color: $grey-blue-10
-        padding: 0 0 $small 0
-        border-bottom: 2px solid $grey-blue-40
-    &-body
+.title
+    @extend %font-bold, %text-upercase, %font-large
+    color: $grey-blue-10
+    border-bottom: 2px solid $grey-blue-40
+    &--large
+        @extend %font-large
+    &--medium
+        @extend %font-medium
+    &--small
+        @extend %font-small
+.block
+    background-color: $grey-blue-40
+    border-radius: $small
+
+.register
+    min-height: 45px
+    min-width: 200px
+
+.carousel
+    &__item
+        height: 70px
+        width: 70px
+    &__button
+        width: 20px
